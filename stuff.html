@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuff Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: #fff;
+            text-shadow: 1px 1px #FF3B3B;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        video {
+            width: 560px;
+            height: 315px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            object-fit: cover;
+        }
+
+        video:hover {
+            transform: scale(1.05);
+        }
+
+        .nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            background: #FF6B6B;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover {
+            background: #FF3B3B;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <h1>Check Out These Videos! 🎬</h1>
+
+    <div class="video-container">
+        <!-- Local Videos -->
+        <video controls>
+            <source src="videos/edit1.MOV" type="video/quicktime">
+            Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+            <source src="videos/edit2.MOV" type="video/quicktime">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
